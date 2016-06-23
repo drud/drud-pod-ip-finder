@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: drud-pod-ip-finder
+spec:
+  replicas: 1
+  selector:
+    name: drud-pod-ip-finder
+  template:
+    metadata:
+      labels:
+        name: drud-pod-ip-finder
+    spec:
+      containers:
+      - image: frodopwns/clusterapi-tester:1.0
+        imagePullPolicy: Always
+        name: drud-pod-ip-finder
+        ports:
+        - containerPort: 3000
+          name: http-server
