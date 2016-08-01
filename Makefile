@@ -4,7 +4,7 @@ all: push
 
 # 0.0 shouldn't clobber any released builds
 TAG = 1.0
-PREFIX = drud/drud-pod-ip-finder
+PREFIX = yourdockerhuborg/yourimagename
 
 main: main.go
 	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags '-w' -o main ./main.go
