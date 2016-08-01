@@ -12,7 +12,7 @@ spec:
         name: drud-pod-ip-finder
     spec:
       containers:
-      - image: frodopwns/clusterapi-tester:1.0
+      - image: yourdockerhuborg/yourimagename:1.0
         imagePullPolicy: Always
         name: drud-pod-ip-finder
         ports:
